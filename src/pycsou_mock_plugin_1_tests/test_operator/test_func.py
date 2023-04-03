@@ -1,4 +1,4 @@
-from {{cookiecutter.module_name}} import NullFunc
+from pycsou_mock_plugin_1 import NullFunc
 
 
 def test_nullfunc():
