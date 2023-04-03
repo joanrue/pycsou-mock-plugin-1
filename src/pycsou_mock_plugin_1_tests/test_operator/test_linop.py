@@ -1,6 +1,6 @@
 import numpy as np
 
-from pycsou_mock_plugin_1 import Flip, NullFunc
+from pycsou_mock_plugin_1 import Flip
 
 
 def test_linop():
@@ -14,5 +14,3 @@ def test_linop():
     out = flip(x.reshape(*batch_shape, -1)).reshape(*input_shape)
     assert np.allclose(out, np.flip(x, axis=2))
 
-def test_nullfunc():
-    assert NullFunc(1)._name == "ModifiedNullFunc"
